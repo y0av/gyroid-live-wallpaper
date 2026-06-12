@@ -17,9 +17,9 @@ object Prefs {
     fun applyTo(config: RenderConfig, p: SharedPreferences) {
         config.paletteIndex = (p.getString(KEY_PALETTE, "0") ?: "0").toIntOrNull() ?: 0
 
-        // Slider 5..90 -> shell half-thickness 0.02..0.105 (thin filigree -> chunky tubes).
+        // Slider 5..90 -> shell half-thickness 0.065..0.32 (thin filigree -> chunky tubes).
         val thicknessSlider = p.getInt(KEY_THICKNESS, 40)
-        config.thickness = 0.015f + thicknessSlider * 0.001f
+        config.thickness = 0.05f + thicknessSlider * 0.003f
 
         // Slider 0..200 -> 0.0..2.0x animation speed.
         config.speed = p.getInt(KEY_SPEED, 100) / 100f
@@ -28,9 +28,9 @@ object Prefs {
         config.parallax = p.getInt(KEY_PARALLAX, 100) / 100f
 
         when ((p.getString(KEY_QUALITY, "1") ?: "1").toIntOrNull() ?: 1) {
-            0 -> { config.maxSteps = 40; config.renderScale = 0.50f }   // battery saver
-            2 -> { config.maxSteps = 72; config.renderScale = 0.80f }   // high
-            else -> { config.maxSteps = 56; config.renderScale = 0.65f } // balanced
+            0 -> { config.maxSteps = 64; config.renderScale = 0.50f }   // battery saver
+            2 -> { config.maxSteps = 110; config.renderScale = 0.85f }  // high
+            else -> { config.maxSteps = 88; config.renderScale = 0.65f } // balanced
         }
 
         config.fpsCap = (p.getString(KEY_FPS, "60") ?: "60").toIntOrNull() ?: 60

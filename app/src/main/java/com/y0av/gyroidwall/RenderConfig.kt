@@ -8,9 +8,9 @@ package com.y0av.gyroidwall
 class RenderConfig {
     @Volatile var speed: Float = 1.0f
     @Volatile var parallax: Float = 1.0f
-    @Volatile var thickness: Float = 0.055f
+    @Volatile var thickness: Float = 0.17f
     @Volatile var paletteIndex: Int = 0
-    @Volatile var maxSteps: Int = 56
+    @Volatile var maxSteps: Int = 88
     @Volatile var renderScale: Float = 0.65f
     @Volatile var fpsCap: Int = 60
 

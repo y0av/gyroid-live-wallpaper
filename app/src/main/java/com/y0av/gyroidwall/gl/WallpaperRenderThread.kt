@@ -121,7 +121,7 @@ class WallpaperRenderThread(
         GLES30.glUniform1f(uParallax, config.parallax)
         GLES30.glUniform1f(uThickness, config.thickness)
         GLES30.glUniform1i(uPalette, config.paletteIndex)
-        GLES30.glUniform1i(uMaxSteps, config.maxSteps.coerceIn(1, 72))
+        GLES30.glUniform1i(uMaxSteps, config.maxSteps.coerceIn(1, 110))
 
         GLES30.glBindVertexArray(vao)
         GLES30.glDrawArrays(GLES30.GL_TRIANGLES, 0, 3)
