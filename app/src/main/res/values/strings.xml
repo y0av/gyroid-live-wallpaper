@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gyroid</string>
+    <string name="wallpaper_author">y0av</string>
+    <string name="wallpaper_description">An infinite, iridescent gyroid lattice you steer by tilting your phone.</string>
+
+    <!-- Launcher screen -->
+    <string name="main_headline">Gyroid · Infinite Lattice</string>
+    <string name="main_subtitle">A raymarched minimal-surface live wallpaper. Tilt your phone to look around the lattice in real 3D.</string>
+    <string name="action_apply">Set as wallpaper</string>
+    <string name="action_settings">Open settings</string>
+    <string name="apply_unavailable">Live wallpaper picker is not available on this device.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Gyroid settings</string>
+    <string name="category_appearance">Appearance</string>
+    <string name="category_motion">Motion &amp; performance</string>
+
+    <string name="pref_palette_title">Color palette</string>
+    <string name="pref_speed_title">Animation speed</string>
+    <string name="pref_thickness_title">Lattice thickness</string>
+    <string name="pref_parallax_title">Tilt parallax intensity</string>
+    <string name="pref_quality_title">Render quality</string>
+    <string name="pref_fps_title">Frame-rate cap</string>
+    <string name="pref_parallax_summary">How strongly tilting the phone moves the camera. 0 disables motion sensing.</string>
+    <string name="pref_quality_summary">Lower quality renders at a smaller resolution and fewer ray steps to save battery.</string>
+</resources>

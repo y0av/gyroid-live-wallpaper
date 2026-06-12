@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="palette_entries">
+        <item>Iridescent</item>
+        <item>Aurora</item>
+        <item>Magma</item>
+        <item>Cyan Neon</item>
+        <item>Monochrome</item>
+    </string-array>
+    <string-array name="palette_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="quality_entries">
+        <item>Battery saver</item>
+        <item>Balanced</item>
+        <item>High</item>
+    </string-array>
+    <string-array name="quality_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="fps_entries">
+        <item>30 fps</item>
+        <item>60 fps</item>
+    </string-array>
+    <string-array name="fps_values">
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+</resources>

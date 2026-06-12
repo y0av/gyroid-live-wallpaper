@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/category_appearance">
+
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/palette_entries"
+            android:entryValues="@array/palette_values"
+            android:key="palette"
+            android:title="@string/pref_palette_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <SeekBarPreference
+            android:defaultValue="40"
+            android:key="thickness"
+            android:max="90"
+            android:title="@string/pref_thickness_title"
+            app:min="5"
+            app:showSeekBarValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/category_motion">
+
+        <SeekBarPreference
+            android:defaultValue="100"
+            android:key="speed"
+            android:max="200"
+            android:title="@string/pref_speed_title"
+            app:min="0"
+            app:showSeekBarValue="true" />
+
+        <SeekBarPreference
+            android:defaultValue="100"
+            android:key="parallax"
+            android:max="150"
+            android:summary="@string/pref_parallax_summary"
+            android:title="@string/pref_parallax_title"
+            app:min="0"
+            app:showSeekBarValue="true" />
+
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/quality_entries"
+            android:entryValues="@array/quality_values"
+            android:key="quality"
+            android:summary="@string/pref_quality_summary"
+            android:title="@string/pref_quality_title" />
+
+        <ListPreference
+            android:defaultValue="60"
+            android:entries="@array/fps_entries"
+            android:entryValues="@array/fps_values"
+            android:key="fps"
+            android:title="@string/pref_fps_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
