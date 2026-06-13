@@ -6,6 +6,10 @@
 
 <img src="docs/feature.png" width="100%" alt="Gyroid live wallpaper banner"/>
 
+<img src="docs/demo.gif" width="32%" alt="Animated flythrough with tilt parallax"/>
+
+<sub><i>Live flythrough with tilt sway — rendered from the actual shader.</i></sub>
+
 <img src="docs/preview_iridescent.png" width="22%"/> <img src="docs/preview_aurora.png" width="22%"/> <img src="docs/preview_magma.png" width="22%"/> <img src="docs/preview_cyan.png" width="22%"/>
 
 </div>
@@ -49,19 +53,30 @@ Open from the wallpaper picker's **Settings**, or from the app's launcher screen
 
 ## Build
 
-Requires JDK 17+ and the Android SDK (platform 36, build‑tools 35). With `ANDROID_HOME`/`local.properties` pointing at your SDK:
+Requires JDK 17+ and the Android SDK (platform 36, build‑tools 36). With `ANDROID_HOME`/`local.properties` pointing at your SDK:
 
 ```bash
 ./gradlew assembleDebug      # -> app/build/outputs/apk/debug/app-debug.apk
+./gradlew assembleRelease    # -> app/build/outputs/apk/release/app-release.apk
 ```
 
 Install and apply:
 
 ```bash
-adb install -r app/build/outputs/apk/debug/app-debug.apk
+adb install -r app/build/outputs/apk/release/app-release.apk
 # then open the "Gyroid" app and tap "Set as wallpaper",
 # or: Settings → Wallpaper → Live wallpapers → Gyroid
 ```
+
+Application id: `xyz.yoav.gyroid` (debug builds use the `.debug` suffix so they can be installed side‑by‑side).
+
+### Device notes
+
+Some manufacturers (OnePlus / Oppo / Realme on ColorOS/OxygenOS, Xiaomi MIUI, etc.) ship aggressive battery managers that **block sideloaded apps from launching in the background** — including live‑wallpaper services bound by the system. If the wallpaper previews correctly but silently reverts when you apply it, enable **auto‑launch / background activity** for Gyroid:
+
+> **Settings → Apps → Gyroid → Battery usage → Allow background activity / "Unrestricted"**, and enable any **"Allow auto‑launch"** toggle for the app.
+
+This is a device policy, not an app bug — see [dontkillmyapp.com](https://dontkillmyapp.com).
 
 ## Releases & CI
 

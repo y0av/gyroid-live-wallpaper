@@ -1,4 +1,4 @@
-package com.y0av.gyroidwall.ui
+package xyz.yoav.gyroid.ui
 
 import android.app.WallpaperManager
 import android.content.ActivityNotFoundException
@@ -11,9 +11,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.y0av.gyroidwall.GyroidWallpaperService
-import com.y0av.gyroidwall.R
-import com.y0av.gyroidwall.settings.WallpaperSettingsActivity
+import xyz.yoav.gyroid.GyroidWallpaperService
+import xyz.yoav.gyroid.R
+import xyz.yoav.gyroid.settings.WallpaperSettingsActivity
 
 /** Small launcher screen: apply the wallpaper or open its settings. */
 class MainActivity : AppCompatActivity() {

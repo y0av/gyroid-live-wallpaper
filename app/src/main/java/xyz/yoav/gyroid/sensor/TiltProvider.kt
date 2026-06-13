@@ -1,4 +1,4 @@
-package com.y0av.gyroidwall.sensor
+package xyz.yoav.gyroid.sensor
 
 import android.content.Context
 import android.hardware.Sensor

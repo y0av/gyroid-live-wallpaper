@@ -1,4 +1,4 @@
-package com.y0av.gyroidwall
+package xyz.yoav.gyroid
 
 import android.content.SharedPreferences
 import android.os.Build
@@ -6,8 +6,8 @@ import android.util.DisplayMetrics
 import android.view.SurfaceHolder
 import android.view.WindowManager
 import androidx.preference.PreferenceManager
-import com.y0av.gyroidwall.gl.WallpaperRenderThread
-import com.y0av.gyroidwall.sensor.TiltProvider
+import xyz.yoav.gyroid.gl.WallpaperRenderThread
+import xyz.yoav.gyroid.sensor.TiltProvider
 import android.service.wallpaper.WallpaperService
 
 /**

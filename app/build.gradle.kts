@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.y0av.gyroidwall"
+    namespace = "xyz.yoav.gyroid"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.y0av.gyroidwall"
+        applicationId = "xyz.yoav.gyroid"
         minSdk = 26
         targetSdk = 36
         versionCode = 1

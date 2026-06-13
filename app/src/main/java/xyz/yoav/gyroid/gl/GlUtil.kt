@@ -1,4 +1,4 @@
-package com.y0av.gyroidwall.gl
+package xyz.yoav.gyroid.gl
 
 import android.opengl.GLES30
 

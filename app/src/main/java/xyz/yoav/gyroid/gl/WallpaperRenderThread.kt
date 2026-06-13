@@ -1,9 +1,9 @@
-package com.y0av.gyroidwall.gl
+package xyz.yoav.gyroid.gl
 
 import android.opengl.GLES30
 import android.util.Log
 import android.view.Surface
-import com.y0av.gyroidwall.RenderConfig
+import xyz.yoav.gyroid.RenderConfig
 
 /**
  * Dedicated render thread that owns the EGL context and draws the gyroid shader

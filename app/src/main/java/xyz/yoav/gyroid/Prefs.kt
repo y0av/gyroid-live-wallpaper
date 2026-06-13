@@ -1,4 +1,4 @@
-package com.y0av.gyroidwall
+package xyz.yoav.gyroid
 
 import android.content.SharedPreferences
 

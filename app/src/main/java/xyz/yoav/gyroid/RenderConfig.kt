@@ -1,4 +1,4 @@
-package com.y0av.gyroidwall
+package xyz.yoav.gyroid
 
 /**
  * Live-tunable rendering parameters shared between the wallpaper engine (writer)

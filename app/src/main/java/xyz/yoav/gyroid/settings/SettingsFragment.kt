@@ -1,8 +1,8 @@
-package com.y0av.gyroidwall.settings
+package xyz.yoav.gyroid.settings
 
 import android.os.Bundle
 import androidx.preference.PreferenceFragmentCompat
-import com.y0av.gyroidwall.R
+import xyz.yoav.gyroid.R
 
 /** Inflates the live-wallpaper preferences. Values are written to the default
  *  SharedPreferences and observed live by the running wallpaper engine. */

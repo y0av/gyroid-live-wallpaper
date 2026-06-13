@@ -1,4 +1,4 @@
-package com.y0av.gyroidwall.gl
+package xyz.yoav.gyroid.gl
 
 /**
  * GLSL ES 3.00 shaders for the gyroid live wallpaper.
